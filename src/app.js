@@ -9,13 +9,9 @@ app.use(bodyParser.json());
 // Sample list of JSON data
 let jsonDataList = [
   {
-    "id_dm000": 733,
-    "id_dm011": 1,
-    "valor_total": 10.5,
-    "nr_conta": 0,
-    "nr_mesa": 12,
-    "nr_fone": "988159063",
-    "in_tipo": "A"
+    "id": 1,
+    "value": 10.5,
+    "account": "table",
   }
 ];
 
