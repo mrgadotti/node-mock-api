@@ -23,6 +23,9 @@ app.get('/api/data', (req, res) => {
 // PUT route to update JSON data
 app.put('/api/data/:index', (req, res) => {
   const index = req.params.index;
+  console.log('------------------------------');
+  console.log(req.body);
+  console.log('++++++++++++++++++++++++++++++');
   jsonDataList[index] = { ...jsonDataList[index], ...req.body };
   res.json(jsonDataList);
 });
@@ -30,6 +33,9 @@ app.put('/api/data/:index', (req, res) => {
 // POST route to insert new JSON data
 app.post('/api/data', (req, res) => {
   jsonDataList.push(req.body);
+  console.log('------------------------------');
+  console.log(req.body);
+  console.log('++++++++++++++++++++++++++++++');
   res.json(jsonDataList);
 });
 
